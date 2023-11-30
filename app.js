@@ -13,7 +13,15 @@ const app = Vue.createApp({
                this.current = '0';
           },
           sign() {
-               this.current = this.current.charAt(0) === '-' ? this.current.slice(1) : `-${this.current}`;
+              if(this.current > 0){
+               this.current = `-${this.current}`;
+                 } else if(this.current < 0){
+               this.current = `${Math.abs(this.current)}`;
+                 } else {
+               this.current = '0';
+                 }
+
+
           },
           percent () {
                this.current = `${parseFloat(this.current) / 100}`;
@@ -26,7 +34,7 @@ const app = Vue.createApp({
                this.operator = '*';
                this.current += this.operator;
           },
-          subtract() {
+          substract() {
                this.operator = '-';
                this.current += this.operator;
           },
@@ -43,7 +51,7 @@ const app = Vue.createApp({
           zero() {
                this.current += '0';
 
-               
+
           },
           number(value) {
                if (this.current === '0') {
