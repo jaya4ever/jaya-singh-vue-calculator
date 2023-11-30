@@ -40,6 +40,11 @@ const app = Vue.createApp({
           equal() {
                this.current = eval(this.current);
           },
+          zero() {
+               this.current += '0';
+
+               
+          },
           number(value) {
                if (this.current === '0') {
                     this.current = '';
