@@ -2,7 +2,7 @@ const app = Vue.createApp({
 
      data() {
           return {
-               current: '10',
+               current: '',
                operator: '',
                
           }
