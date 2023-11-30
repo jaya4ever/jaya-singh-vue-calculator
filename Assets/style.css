@@ -1,12 +1,18 @@
 .calculator {
-   
+   display: grid;
     margin: 0 auto;
     width: 400px;
     font-size: 40px;
-    display: grid;
+    grid-gap: 1rem;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: minmax(50px, auto);
     text-align: center;
+    /* border: blue solid 5px; */
+    padding: .5rem;
+    background-color: #696969;
+
+   
+    
   
 }
 
@@ -14,6 +20,7 @@
     grid-column: 1 / 5;
     background-color: lightsalmon;
     color: white;
+    
   }
   .btn {
     background-color: darkgray;
@@ -47,6 +54,7 @@
     .operator:hover {
         background-color: #ff8c00;
         cursor: pointer;
+        color:black;
     }
 
     .sign {
