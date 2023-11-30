@@ -12,15 +12,20 @@
 
 .display {
     grid-column: 1 / 5;
-    background-color: green;
+    background-color: lightsalmon;
     color: white;
   }
   .btn {
-    background-color: #F2F2F2;
+    background-color: darkgray;
     border: 1px solid #999;
     border-radius: 5px;
     text-align: center;
+    color: white;
   }
+    .btn:hover {
+        background-color: #696969;
+        cursor: pointer;
+    }
   header {
     /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26); */
     margin:  1rem auto;
@@ -35,5 +40,42 @@
   .zero {
     grid-column: 1 / 3;
   }
+ .operator {
+    color: white;
+    background-color: darkorange
+ }
+    .operator:hover {
+        background-color: #ff8c00;
+        cursor: pointer;
+    }
+
+    .sign {
+        background-color: white;
+        color: black;
+    }
+
+    .sign:hover {
+        background-color: #696969;
+        cursor: pointer;
+    }
+
+    .clear {
+        background-color: white;
+        color: black;
+    }
+
+    .clear:hover {
+        background-color: #696969;
+        cursor: pointer;
+    }
+
+    .percent {
+        background-color: white;
+        color: black;
+    }  
     
+    .percent:hover {
+        background-color: #696969;
+        cursor: pointer;
+    }
  

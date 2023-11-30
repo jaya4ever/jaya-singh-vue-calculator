@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
     <link rel="stylesheet" href="Assets/style.css" />
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js" ></script>
     <script src="app.js" defer></script>
   </head>
 
@@ -16,9 +16,9 @@
     <div id="app">
       <div class="calculator">
         <div class="display">{{current || '0'}}</div>
-        <div v-on:click="clear" class="btn">AC</div>
-        <div v-on:click="sign" class="btn">+/-</div>
-        <div v-on:click="percent" class="btn">%</div>
+        <div v-on:click="clear" class="btn clear">AC</div>
+        <div v-on:click="sign" class="btn sign">+/-</div>
+        <div v-on:click="percent" class="btn percent">%</div>
         <div v-on:click="divide" class="btn operator">÷</div>
         <div v-on:click="number('7')" class="btn">7</div>
         <div v-on:click="number('8')" class="btn">8</div>
