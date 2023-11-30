@@ -32,3 +32,8 @@
     width: 40%;
     max-width: 35rem;
   }
+  .zero {
+    grid-column: 1 / 3;
+  }
+    
+ 
