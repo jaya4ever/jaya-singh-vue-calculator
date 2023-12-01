@@ -1,0 +1,89 @@
+.calculator {
+   display: grid;
+    margin: 0 auto;
+    width: 400px;
+    font-size: 40px;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+    text-align: center;
+    /* border: blue solid 5px; */
+    padding: .5rem;
+    background-color: #696969;
+
+   
+    
+  
+}
+
+.display {
+    grid-column: 1 / 5;
+    background-color: lightsalmon;
+    color: white;
+    
+  }
+  .btn {
+    background-color: darkgray;
+    border: 1px solid #999;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+  }
+    .btn:hover {
+        background-color: #696969;
+        cursor: pointer;
+    }
+  header {
+    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26); */
+    margin:  1rem auto;
+    border-radius: 1px;
+    padding: .5rem;
+    background-color: #62c04f;
+    color: white;
+    text-align: center;
+    width: 40%;
+    max-width: 35rem;
+  }
+  .zero {
+    grid-column: 1 / 3;
+  }
+ .operator {
+    color: white;
+    background-color: orange;
+ }
+    .operator:hover {
+        background-color: orangered;
+        cursor: pointer;
+        color:black;
+    }
+
+    .sign {
+        background-color: white;
+        color: black;
+    }
+
+    .sign:hover {
+        background-color: #696969;
+        cursor: pointer;
+    }
+
+    .clear {
+        background-color: white;
+        color: black;
+    }
+
+    .clear:hover {
+        background-color: #696969;
+        cursor: pointer;
+    }
+
+    .percent {
+        background-color: white;
+        color: black;
+    }  
+    
+    .percent:hover {
+        background-color: #696969;
+        cursor: pointer;
+    }
+ 
