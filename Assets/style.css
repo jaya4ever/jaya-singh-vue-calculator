@@ -49,7 +49,7 @@
   }
  .operator {
     color: white;
-    background-color: darkorange
+    background-color: darkorange;
  }
     .operator:hover {
         background-color: #ff8c00;
