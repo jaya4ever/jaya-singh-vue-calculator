@@ -11,7 +11,7 @@ const app = Vue.createApp({
 
      methods: {
           clear() {
-               this.current = '0';
+               this.current = '';
           },
           sign() {
               if(this.current > 0){
