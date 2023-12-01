@@ -2,9 +2,10 @@ const app = Vue.createApp({
 
      data() {
           return {
+               previous: null,
                current: '',
-               operator: '',
-               
+               operator: null,
+               operatorClicked: false,
           }
      },
 
@@ -23,30 +24,44 @@ const app = Vue.createApp({
 
 
           },
+          setPrevious() {
+               this.previous = this.current;
+               this.operatorClicked = true;
+          },
           percent () {
                this.current = `${parseFloat(this.current) / 100}`;
+               this.setPrevious();
           },
           divide() {
                this.operator = '/';
                this.current += this.operator;
+               this.setPrevious();
           },
           multiply() {
                this.operator = '*';
                this.current += this.operator;
+               this.setPrevious();
           },
           substract() {
                this.operator = '-';
                this.current += this.operator;
+               this.setPrevious();
           },
           add() {
                this.operator = '+';
                this.current += this.operator;
+               this.setPrevious();
           },
           dot() {
                this.current += '.';
+              
           },
+         
           equal() {
                this.current = eval(this.current);
+               this.previous = null;
+              
+         
           },
           zero() {
                this.current += '0';
@@ -56,6 +71,7 @@ const app = Vue.createApp({
           number(value) {
                if (this.current === '0') {
                     this.current = '';
+                    this.operatorClicked = false;
                }
                this.current += value;
           },
