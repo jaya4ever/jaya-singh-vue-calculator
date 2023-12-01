@@ -10,6 +10,7 @@
     /* border: blue solid 5px; */
     padding: .5rem;
     background-color: #696969;
+    border-radius: .5rem;
 
    
     
@@ -20,6 +21,7 @@
     grid-column: 1 / 5;
     background-color: lightsalmon;
     color: white;
+    border-radius: .5rem;
     
   }
   .btn {
